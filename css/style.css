@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Plus Jakarta Sans";
+}
+.cover{
+    background-image: url("../img/bg-cover.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.down-bg{
+    width: 100%;
+}
+.fs-18{
+    font-size: 18px;
+}
+.fs-56{
+    font-size: 56px;
+}
+.fs-40{
+    font-size: 40px;
+}
+.fs-36{
+    font-size: 36px;
+}
+.nav-clr{
+    color: #072125;
+}
+.div-bg{
+    background-color: #2D3142;
+}
+.div-txt-clr{
+    color: #DDDDDD;
+}
+.p-text-clr{
+    color: #2D3142;
+}
+.btn-hv:hover{
+    color: black !important;
+}
+.top{
+    margin-top: 100px;
+}
+.ano-top{
+    margin-top: 200px;
+}
+.w-div{
+    width: 251px !important;
+}
+.fs-one{
+    opacity: 0.1;
+    font-size: 204px;
+    color: #F44335;
+    margin-top: -95px;
+    margin-left: -105px;
+}
+.fs-14{
+    font-size: 14px;
+    color: #757095;
+}
+.bg-clr{
+    padding: 35px;
+    padding-bottom: 0 !important;
+    background-color: #FFFFFF;
+}
+.bg-team{
+    margin-top: 100px;
+    background-color: #F9CCC726;
+}
+.copyright{
+    font-size: 14px;
+    color: #20484F;
+}
+.footer-section{
+    margin-top: 100px;
+}
+.img-left{
+    top: 150px;
+    left: -70px;
+    z-index: -99999;
+    overflow: hidden;
+}
+.img-right{
+    top: -100px;
+    right: -65px;
+    z-index: -99999;
+    overflow: hidden;
+}
+/*hover effect and animation */
+#icon ul li a:hover{
+    transition: 1.2s all;
+    text-decoration-color: #F44335;
+    color: red;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 9px;
+    text-decoration-color: #F44335;
+    transform: translateX(7px);
+}
+.div-bg:hover{
+    transition: .5s all;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+.card-hv:hover{
+    transition: .5s all;
+    padding: 30px !important;
+    cursor: pointer;
+    background-color: lightskyblue !important;
+    color: white;
+}
+.footer-hv a:hover{
+    transition: .7s all;
+    transform: scale(1.1);
+    color: lightcoral !important;
+}
+.btn-animate:hover{
+    transition: .5s all;
+    background-color: lightseagreen;
+    color: white !important;
+    border-radius: 50px !important;
+}
+.btn-animate{
+    animation-name: btn-animate;
+    animation-duration: 4s;
+     animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53); 
+    animation-iteration-count: infinite;
+}
+@keyframes btn-animate{
+    0%{
+        transform: translateX(0px)
+    }
+    25%{
+        transform: translateX(10px);
+    }
+    50%{
+        transform: translateX(15px);
+    }
+    75%{
+        transform: translateX(30px)g;
+    }
+    100%{
+        transform: translateX(0px)
+    }
+}
+/* load animation added */
+#preloder{
+    background: black url(../img/loder.gif) no-repeat center center;
+    background-size: 10%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
